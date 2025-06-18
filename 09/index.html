@@ -12,13 +12,13 @@
     <span>Conteiner body</span>
     <div id="conteudo">
         Conteiner div
-        <div class="caixa">
+        <div id="relative" class="caixa">
             Relativo
         </div>
-        <div class="caixa">
+        <div id="absolute" class="caixa">
             Absoluto
         </div>
-        <div class="caixa">
+        <div id="fixed" class="caixa">
             Fixo
         </div>
 
@@ -40,6 +40,19 @@
         width: 100px;
         height: 100px;
         color: #FFFFFF;
+    }
+    #relativo{
+        position: relative;
+        left: 30px;
+    }
+    #absoluto{
+        position: absolute;
+        left: 30px;
+    }
+    #fixo{
+        position: fixed;
+        left: 200px;
+        top: 0px;
     }
     </style>
 </body>
