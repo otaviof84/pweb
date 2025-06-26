@@ -5,7 +5,7 @@
     color: blue;
 }
 .pessoa::before {
-    content: 'Antes:' ;
+    content: 'Nome:' ;
 }
 .pessoa::after {
     content: attr(data-idade) " - C.P.F: " attr(data-cpf);
