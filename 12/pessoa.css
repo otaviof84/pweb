@@ -8,5 +8,5 @@
     content: 'Nome' ;
 }
 .pessoa::after {
-    content: attr(data-idade) " - C.P.F: " attr(cpf)
+    content: attr(data-idade) " - C.P.F: " attr(data-cpf);
 }
