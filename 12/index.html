@@ -8,14 +8,11 @@
     <link rel='stylesheet' type='text/css' href='pessoa.css'>
     <script src='main.js'></script>
     <script type="text/javascript">
-
-
-	function mostravalor(evento){
-		if(evento.target.classList.contains('dado')) {
-            alert(evento.target.textContent);
-        }
+        function mostravalor(componente){
+            var valor = componente.getAttribute('data-idade');
+            alert(valor);
 		
-	}
+        }
 
 
 </script>
@@ -23,11 +20,7 @@
 </head>
 <body>
     <ul>
-        <li onclick="mostrarvalor(event)">
-  Nome: <span class="dado">João</span> -
-  Idade: <span class="dado">20</span> -
-  C.P.F: <span class="dado">999</span>
-</li>
+        <li class="pessoa" onclick="mostravalor(event)" data-idade="20" data-cpf="999">João - Idade: </li>
         <li class="pessoa" onclick="mostravalor(event)" data-idade="30" data-cpf="888">José - Idade: </li>
         <li class="pessoa" onclick="mostravalor(event)" data-idade="40" data-cpf="777">Maria - Idade:</li>
     </ul>
