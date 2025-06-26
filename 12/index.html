@@ -8,21 +8,23 @@
     <link rel='stylesheet' type='text/css' href='pessoa.css'>
     <script src='main.js'></script>
     <script type="text/javascript">
-        function mostravalor(componente){
-            var valor = componente.getAttribute('data-idade');
-            alert(valor);
-		
-        }
+
+
+	function mostravalor(componente){
+		var valor = componente.getAttribute('data-idade');
+		alert(valor);
+	}
 
 
 </script>
 
+
 </head>
 <body>
     <ul>
-        <li class="pessoa" onclick="mostravalor(event)" data-idade="20" data-cpf="999">João - Idade: </li>
-        <li class="pessoa" onclick="mostravalor(event)" data-idade="30" data-cpf="888">José - Idade: </li>
-        <li class="pessoa" onclick="mostravalor(event)" data-idade="40" data-cpf="777">Maria - Idade:</li>
+        <li class="pessoa" onclick="mostravalor(this)" data-idade="20" data-cpf="999">João - Idade: </li>
+        <li class="pessoa" onclick="mostravalor(this)" data-idade="30" data-cpf="888">José - Idade: </li>
+        <li class="pessoa" onclick="mostravalor(this)" data-idade="40" data-cpf="777">Maria - Idade:</li>
     </ul>
     
 </body>
