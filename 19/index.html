@@ -1,32 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Botões</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+  <meta charset="UTF-8">
+  <title>Atividade 19 - Bootstrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+  <div class="container mt-5">
+    
     <div class="row">
-        <div class="col-sm-6">
-            <h1>Botões Padrões</h1>
-            <a href="" class="btn btn-default">Botão link</a>
-            <input type="submit" class="btn btn-default" value="Botão  submit">
-            <button class="btn btn-default">Botão Button</button>
-        </div>
-        <div class="col-sm-6">
-            <h1>Tipos de Botões</h1>
-            <button type="button" class="btn btn-primary btn-xs">Botão</button>
-            <button type="button" class="btn btn-secondary btn-sm">Botão</button>
-            <button type="button" class="btn btn-success btn-md">Botão</button>
-            <button type="button" class="btn btn-info btn-lgt">Botão</button>
-            <button type="button" class="btn btn-warning">Botão</button>
-            <button type="button" class="btn btnt-danger">Botão</button>
-  
+      
+      <div class="col-md-6">
+        <h4>Botões Padrões</h4>
+        
+        <a href="#" class="btn btn-primary">Link</a>
+        <input type="button" class="btn btn-secondary" value="Input">
+        <button class="btn btn-success">Button</button>
 
-        </div>
+        <h4 class="mt-4">Tipo de Botões</h4>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-light">Light</button>
+        <button class="btn btn-dark">Dark</button>
+
+        <h4 class="mt-4">Tamanhos de Botões</h4>
+        <button class="btn btn-primary btn-lg">Grande</button>
+        <button class="btn btn-primary">Normal</button>
+        <button class="btn btn-primary btn-sm">Pequeno</button>
+      </div>
+
+      
+      <div class="col-md-6">
+        <h4>Imagens Responsivas</h4>
+        <img src="https://www.dropbox.com/s/bqjy71eqkguqqth/uvas.png?raw=1" class="img-fluid mb-3" alt="Uvas">
+
+        <h4>Formas em Imagens</h4>
+        <img src="https://www.dropbox.com/s/odrbwftqh9e619j/uvas200.png?raw=1" class="img-thumbnail mb-2" alt="Mini Uvas">
+        <img src="https://www.dropbox.com/s/odrbwftqh9e619j/uvas200.png?raw=1" class="rounded mb-2" alt="Imagem Arredondada">
+        <img src="https://www.dropbox.com/s/odrbwftqh9e619j/uvas200.png?raw=1" class="rounded-circle" alt="Imagem Circular">
+      </div>
     </div>
+
+    
+    <div class="row mt-5">
+      <div class="col-12">
+        <h4>Paleta de Botões com Font Awesome</h4>
+        <button class="btn btn-primary"><i class="fas fa-home"></i> Início</button>
+        <button class="btn btn-success"><i class="fas fa-check"></i> Confirmar</button>
+        <button class="btn btn-danger"><i class="fas fa-trash"></i> Excluir</button>
+        <button class="btn btn-warning"><i class="fas fa-edit"></i> Editar</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
