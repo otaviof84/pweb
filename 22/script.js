@@ -1,7 +1,8 @@
 function mostrarRaiz(numero) {
-    const resultado = Math.sqrt(numero);
-    document.getElementById("resultadoRaiz").innerHTML = `A raiz quadrada de ${numero} é ${resultado}`;
+    var raiz = Math.sqrt(numero);
+    alert(`A raiz quadrada de ${numero} é ${raiz}`);
 }
+
 
 function escreverNaDiv() {
     document.getElementById("divTexto").innerHTML = "Este texto foi escrito por uma função JavaScript.";
