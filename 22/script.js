@@ -11,5 +11,15 @@ function escreverDinamico() {
     const texto = document.getElementById("entradaUsuario").value;
     document.getElementById("textoDinamico").innerHTML = `Você digitou: ${texto}`;
 }
+function escreverDinamico() {
+    const textoDigitado = document.getElementById("entradaUsuario").value;
+    const destino = document.getElementById("textoDinamico");
+
+    if (textoDigitado.trim() === "") {
+        destino.innerHTML = "Por favor, digite algo.";
+    } else {
+        destino.innerHTML = `Você digitou: ${textoDigitado}`;
+    }
+}
 
 
