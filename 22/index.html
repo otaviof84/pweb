@@ -3,26 +3,32 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>JavaScript</title>
+    <title>Exercícios JavaScript</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href="estilo.css">
     <script src='main.js'></script>
 </head>
 <body>
-    <h1>Atividade 22 - JavaScript</h1>
+    <h1>Atividade 22 - Exercícios Javascript 01</h1>
 
-    <button onclick="mostrarAlerta()">Mostrar Alerta</button>
-
-    <button onclick="escreve()">Escrever na Página</button>
-
-    <button onclick="calcularRaizes()">Raízes Quadradas</button>
+    <h2>Raiz Quadrada</h2>
+    <button onclick="mostrarRaiz(25)">Raiz de 25</button>
+    <button onclick="mostrarRaiz(36)">Raiz de 36</button>
+    <button onclick="mostrarRaiz(49)">Raiz de 49</button>
     <div id="resultadoRaiz"></div>
 
-    <button onclick="textoDinamico()">Texto Dinâmico</button>
-    <input type="text" id="entradaTexto">
-    <div id="saidaTexto"></div>
+    <hr>
 
-    <button onclick="contarNumeros()">Contar de 1 até N</button>
-    <div id="numerosContados"></div>
+    <h2>Escrevendo na Div</h2>
+    <button onclick="escreverNaDiv()">Escrever</button>
+    <div id="divTexto"></div>
+
+    <hr>
+
+    <h2>Escrevendo Texto Dinâmico</h2>
+    <input type="text" id="entradaUsuario" placeholder="Digite algo...">
+    <button onclick="escreverDinamico()">Escrever</button>
+    <div id="textoDinamico"></div>
 </body>
 </html>
+
