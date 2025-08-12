@@ -41,6 +41,10 @@
             <label>UF</label>
             <input type="text" id="uf" class="form-control">
         </div>
+        <div class="mb-2">
+            <label>IBGE</label>
+            <input type="text" id="ibge" class="form-control">
+        </div>
     </form>
 
     <script>
@@ -59,9 +63,11 @@
                 $("#bairro").val(retorno.bairro);
                 $("#localidade").val(retorno.localidade);
                 $("#uf").val(retorno.uf);
+                $("#ibge").val(retorno.ibge); // Campo IBGE
             });
         });
     </script>
 
 </body>
 </html>
+
