@@ -19,15 +19,32 @@
     <hr class="my-5">
 
     <h2 class="mb-3">Consulta CEP</h2>
-    <input type="text" id="cep" placeholder="Digite o CEP" class="form-control w-25 d-inline">
-    <button id="btnCep" class="btn btn-primary">Buscar</button>
+    <div class="mb-3">
+        <input type="text" id="cep" placeholder="Digite o CEP" class="form-control w-25 d-inline">
+        <button id="btnCep" class="btn btn-primary">Buscar</button>
+    </div>
 
     <form class="mt-3">
-        <input type="text" id="logradouro" class="form-control mb-2" placeholder="Logradouro">
-        <input type="text" id="bairro" class="form-control mb-2" placeholder="Bairro">
-        <input type="text" id="cidade" class="form-control mb-2" placeholder="Cidade">
-        <input type="text" id="uf" class="form-control mb-2" placeholder="UF">
-        <input type="text" id="ibge" class="form-control mb-2" placeholder="IBGE">
+        <div class="mb-2">
+            <label for="logradouro" class="form-label">Rua</label>
+            <input type="text" id="logradouro" class="form-control">
+        </div>
+        <div class="mb-2">
+            <label for="bairro" class="form-label">Bairro</label>
+            <input type="text" id="bairro" class="form-control">
+        </div>
+        <div class="mb-2">
+            <label for="cidade" class="form-label">Cidade</label>
+            <input type="text" id="cidade" class="form-control">
+        </div>
+        <div class="mb-2">
+            <label for="uf" class="form-label">UF</label>
+            <input type="text" id="uf" class="form-control">
+        </div>
+        <div class="mb-2">
+            <label for="ibge" class="form-label">IBGE</label>
+            <input type="text" id="ibge" class="form-control">
+        </div>
     </form>
 
     <script>
@@ -51,5 +68,6 @@
 
 </body>
 </html>
+
 
 
